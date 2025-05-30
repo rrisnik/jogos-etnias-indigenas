@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo das Etnias Indígenas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Escolha uma Etnia para Explorar</h1>
+    <div id="menu">
+        <button onclick="startGame('guarani')">Guarani</button>
+        <button onclick="startGame('yanomami')">Yanomami</button>
+        <button onclick="startGame('mapuche')">Mapuche</button>
+        <button onclick="startGame('qom')">Qom</button>
+    </div>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <div id="hud">
+        <p>Cultura: <span id="cultura">50</span></p>
+        <p>Território: <span id="territorio">50</span></p>
+        <p>Bem-estar: <span id="bem_estar">50</span></p>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
